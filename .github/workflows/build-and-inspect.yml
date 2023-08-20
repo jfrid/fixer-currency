@@ -1,0 +1,11 @@
+name: Build and Inspect a Python Package
+
+on: [push]
+
+jobs:
+  build-and-inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build and Inspect Python Package
+        uses: hynek/build-and-inspect-python-package@v1.5
+  
