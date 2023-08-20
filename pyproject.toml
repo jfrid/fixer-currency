@@ -40,6 +40,9 @@ path = "src/fixer_currency/__about__.py"
 [tool.hatch.build.targets.wheel]
 packages = ["src/fixer_currency"]
 
+[tool.hatch.envs.default]
+dependencies = []
+
 [tool.hatch.envs.test]
 dependencies = [
   "coverage[toml]>=6.5",
