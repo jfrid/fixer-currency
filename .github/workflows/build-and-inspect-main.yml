@@ -1,11 +1,15 @@
-name: Build and Inspect this Python package (non-main branch)
+name: Build and Inspect this Python package (main branch)
 
 on:
-  push:
-    branches-ignore: ['main']
+  pull_request:
+    types:
+      - closed
+    branches:
+      - 'main'
 
 jobs:
-  build-and-inspect:
+  build-and-inspect-if-merged:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Git repository
