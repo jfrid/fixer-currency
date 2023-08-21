@@ -1,7 +1,10 @@
 # Fixer Currency
 
+A Python module for the Fixer API for currency conversion.
+
 [![PyPI - Version](https://img.shields.io/pypi/v/fixer-currency.svg)](https://pypi.org/project/fixer-currency)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/fixer-currency.svg)](https://pypi.org/project/fixer-currency)
+![Github Build Status](https://github.com/jfrid/fixer-currency/actions/workflows/build-and-inspect-main.yml/badge.svg)
 
 -----
 

@@ -16,7 +16,7 @@ class FixerClient:
     def __init__(
         self,
         access_key: str,
-        base: Optional[str] = None,
+        base: str = "EUR",
         symbols: Union[None, str, Iterable[str]] = None,
     ):
         """Create FixerClient object.
@@ -26,7 +26,7 @@ class FixerClient:
         :param symbols: currency symbol(s) to always request specific exchange rates.
         """
         self._access_key = access_key
-        self._base = base or "EUR"
+        self._base = base
         self._symbols = symbols
 
     def _create_headers(self) -> Dict[str, str]:
